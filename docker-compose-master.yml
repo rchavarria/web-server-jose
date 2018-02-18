@@ -3,7 +3,6 @@ version: '3'
 services:
   # a container to serve the blog
   blog:
-    build: .
     image: jekyll/jekyll   # build from latest jekyll
     container_name: blog
     ports:
