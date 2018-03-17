@@ -19,6 +19,7 @@ permalink: /
     </div>
   </div>
 </section>
+
 <!-- Wrapper Start -->
 <section id="intro">
   <div class="container">
@@ -45,6 +46,7 @@ Y aquí una descripción más larga de cómo hacemos las cosas y de cómo nos gu
   </div>
 </section>
 
+<!-- Feature -->
 <section id="feature">
 <div class="container">
   <div class="row">
@@ -102,64 +104,19 @@ Bueno, qué, a estas alturas ya debería saber qué poner aquí para describir l
     </div>
   </div>
 </section>
+
 <!-- Call to action Start -->
 <section id="call-to-action">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+          <h2>Las transformaciones agrarias son lo nuestro</h2>
+          <p>
+No pierda usted la oportunidad de hablar con nosotros y conocernos más a fondo
+          </p>
+          <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/contact" >Contacte con nosotros</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Content Start -->
-<section id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="section-title text-center">
-        <h2>Fun Facts About Us</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6">
-        {% if site.data.funfacts.size > 0 %}
-        <div class="block">
-          {% for ff in site.data.funfacts %}
-          <ul class="counter-box clearfix">
-            <li>
-              <div class="block">
-                <i class="{{ ff.icon }}"></i>
-                <h4 class="counter">{{ ff.counter }}</h4>
-                <span>{{ ff.text }}</span>
-              </div>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-        {% endif %}
-      </div>
-      <div class="col-md-6">
-        {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
-                <img src="img/cotation.png" alt="IMG">
-                <p>{{ tm.testimonial }}</p>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
-                </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% endif %}
       </div>
     </div>
   </div>
