@@ -8,8 +8,8 @@ services:
     ports:
       - 4000:4000          # expose this port
     volumes:
-      - ./theme:/srv/jekyll      # share local source files with the container
-      - ./theme/vendor/bundle:/usr/local/bundle     # cache ruby gems
+      - ./docs:/srv/jekyll      # share local source files with the container
+      - ./docs/vendor/bundle:/usr/local/bundle     # cache ruby gems
       
     entrypoint:
       - jekyll
